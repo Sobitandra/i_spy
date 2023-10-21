@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047272639585",
+    "project_id": "cloud-function-tutorial-39d05",
+    "storage_bucket": "cloud-function-tutorial-39d05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047272639585:android:03ba4c567a905269caae20",
+        "android_client_info": {
+          "package_name": "com.example.cloud_functions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbvEKci3zJJi8l8WqqgXuLBerGsISM0Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047272639585:android:cb19ed50afa5dd00caae20",
+        "android_client_info": {
+          "package_name": "com.example.i_spy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbvEKci3zJJi8l8WqqgXuLBerGsISM0Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
