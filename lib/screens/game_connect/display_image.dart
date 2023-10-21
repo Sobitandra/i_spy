@@ -28,8 +28,10 @@ class _DisplayImageScreenState extends State<DisplayImageScreen> {
 
   uploadImage() async {
     try {
+      // -2 Represent uploading Start
       uploadingProgress.value = -2;
       await firebaseService.uploadGameImage(gameId: widget.gameId, file: widget.file, progress: (double value) {
+        // progress call back Function to display uploading progress
         uploadingProgress.value = value;
       }).then((value) {
         widget.textLetter(controller.text, value);
@@ -75,6 +77,8 @@ class _DisplayImageScreenState extends State<DisplayImageScreen> {
                     child: Card(
                       color: Colors.white,
                       surfaceTintColor: Colors.white,
+
+                      // check this to show user that uploading will start soon.
                       child: uploadingProgress.value != -2?
                       TweenAnimationBuilder(
                         tween: Tween<double>(

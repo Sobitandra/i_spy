@@ -28,6 +28,7 @@ class FirebaseService {
 
   Future sendImage({required String roomId, required String word, required String image,}) async {
     try {
+      // key word when sending files and images both for gameStart
       await fireStore.collection("i_spy").doc(roomId).collection("game_collection").add({
         "sender_id": currentUserID,
         "word": word,
@@ -45,6 +46,7 @@ class FirebaseService {
 
   Future sendMessage({required String roomId, required String word}) async {
     try {
+      // key message when sending simple message.
       await fireStore.collection("i_spy").doc(roomId).collection("game_collection").add({
         "sender_id": currentUserID,
         "message": word,
@@ -65,6 +67,7 @@ class FirebaseService {
       final userProfileImageRef = storage.ref("games").child("$gameId/${DateTime.now().millisecondsSinceEpoch}");
       UploadTask task6 = userProfileImageRef.putFile(file);
       task6.asStream().listen((event) {
+        // progress call back Function to display uploading progress
         progress(event.bytesTransferred / event.totalBytes);
       });
       return await (await task6).ref.getDownloadURL();
