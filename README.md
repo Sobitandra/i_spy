@@ -1,6 +1,13 @@
 
 # I Spy Game
 
+## Flow:
+
+The App flow is clear and simple.
+Any user can login with google auth or anonymously.
+Then can start chat with any other user and can share image and start game.
+Users can connnect easly with chatting.
+
 ## Here what i have done:
 
 1. Google login or Anonymous Login option with firebase authentication.
